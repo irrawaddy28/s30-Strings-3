@@ -24,9 +24,13 @@ Solution:
 Each chunk is converted into words using simple rules defined in a magic function. In the magic function, handle small numbers directly, combine tens and ones, or add “Hundred” if needed.
 Then join the word parts with proper labels like "Thousand" or "Million", clean up spaces, and that's our final sentence.
 
+https://youtu.be/Xh2vTslrnGw?t=3191
+
+Time: O(1), Space: O(1) (since no. of digits in the number is finite)
+
 2. numberToWords2(): This is similar to the Solution #1 except that we dont need to call the magic function recursively.
 
-Time: O(1), Space: O(1) (since no. of digits in the number if finite)
+Time: O(1), Space: O(1)
 
 '''
 below_20 = ["", "One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine ", "Ten ", "Eleven ", "Twelve ", "Thirteen ", "Fourteen ", "Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen "]
